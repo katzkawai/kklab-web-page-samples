@@ -7,46 +7,116 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="page-bg"></div>
+
     <header class="hero">
-      <h1>Yamada Taro</h1>
-      <p>Web Developer</p>
+      <div class="hero-inner">
+        <p class="eyebrow">Premium Portfolio</p>
+        <h1>Yamada Taro</h1>
+        <p class="lead">
+          上質なデザインと心地よい操作体験を両立する、フロントエンド開発者。
+          伝わる美しさと、長く使われる実用性を大切にしています。
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Projectsを見る</a>
+          <a class="button button-secondary" href="#contact">お問い合わせ</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li>
+            <strong>Design</strong>
+            <span>洗練されたUI設計</span>
+          </li>
+          <li>
+            <strong>Front-end</strong>
+            <span>実装まで一貫対応</span>
+          </li>
+          <li>
+            <strong>Quality</strong>
+            <span>上品で使いやすい体験</span>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h2>About</h2>
+      <section class="card card-highlight">
+        <div class="section-heading">
+          <div>
+            <h2>About</h2>
+            <p>見た目の美しさと、使いやすさの両立を大切にしています。</p>
+          </div>
+        </div>
         <p>
           シンプルで使いやすいWebサイトを作ることが得意です。フロントエンド開発を中心に、
-          デザインから実装まで一貫して対応します。
+          デザインから実装まで一貫して対応します。視線の流れや余白、質感にまで気を配り、
+          落ち着きのある上質なWeb体験を提供します。
         </p>
       </section>
 
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML / CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
+      <section class="card">
+        <div class="section-heading">
+          <div>
+            <h2>Skills</h2>
+            <p>必要な技術を、確かな品質で丁寧に形にします。</p>
+          </div>
+        </div>
+        <div class="chips">
+          <span>HTML / CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Responsive Design</span>
+          <span>UI / UX Design</span>
+        </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <article>
-          <h3>コーポレートサイト制作</h3>
-          <p>中小企業向けのレスポンシブWebサイトを制作し、運用までサポートしました。</p>
-        </article>
-        <article>
-          <h3>ポートフォリオテンプレート作成</h3>
-          <p>個人向けのカスタマイズ可能なポートフォリオテンプレートを設計・実装しました。</p>
-        </article>
+      <section class="card" id="projects">
+        <div class="section-heading">
+          <div>
+            <h2>Projects</h2>
+            <p>落ち着いた高級感を意識した、実績紹介セクションです。</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card luxury-card luxury-gold">
+            <span class="project-tag">Corporate</span>
+            <h3>コーポレートサイト制作</h3>
+            <p>
+              中小企業向けのレスポンシブWebサイトを制作し、ブランドイメージを保ちながら
+              情報設計と運用性を両立しました。
+            </p>
+          </article>
+
+          <article class="project-card luxury-card luxury-charcoal">
+            <span class="project-tag">Template</span>
+            <h3>ポートフォリオテンプレート作成</h3>
+            <p>
+              個人向けに、余白・タイポグラフィ・導線設計を重視した
+              カスタマイズ可能なテンプレートを設計・実装しました。
+            </p>
+          </article>
+
+          <article class="project-card luxury-card luxury-navy">
+            <span class="project-tag">Branding</span>
+            <h3>ランディングページ最適化</h3>
+            <p>
+              世界観を崩さずに訴求力を高めるため、構成・配色・CTA配置を見直し、
+              品のあるコンバージョン導線を設計しました。
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:taro@example.com">taro@example.com</a>
-        </p>
+      <section class="card contact-card" id="contact">
+        <div class="section-heading">
+          <div>
+            <h2>Contact</h2>
+            <p>制作依頼やご相談は、メールよりお気軽にご連絡ください。</p>
+          </div>
+        </div>
+        <p>Email: <a href="mailto:taro@example.com">taro@example.com</a></p>
       </section>
     </main>
   </body>
