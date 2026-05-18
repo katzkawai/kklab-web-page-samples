@@ -6,6 +6,7 @@
   --hero-bg: #2563eb;
   --hero-text: #ffffff;
   --shadow: rgba(0, 0, 0, 0.06);
+  --link-color: #2563eb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +17,7 @@
     --hero-bg: #1d4ed8;
     --hero-text: #ffffff;
     --shadow: rgba(0, 0, 0, 0.3);
+    --link-color: #93c5fd;
   }
 }
 
@@ -59,5 +61,5 @@ h3 {
 }
 
 a {
-  color: #2563eb;
+  color: var(--link-color);
 }
